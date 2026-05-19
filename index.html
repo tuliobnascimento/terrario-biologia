@@ -1,19 +1,30 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoJornal Brasil | Biodiversidade e Preservação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="stylesheet" href="style.css" />
+  <title>EcoJornal Brasil</title>
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
+  <!-- HEADER -->
+
   <header class="top-header">
+
     <div class="header-content">
+
       <div>
-        <p class="newspaper-label">JORNAL AMBIENTAL DIGITAL</p>
+        <p class="newspaper-label">
+          JORNAL AMBIENTAL DIGITAL
+        </p>
+
         <h1>EcoJornal Brasil</h1>
+
         <p class="headline">
           Biodiversidade, evolução das plantas e os desafios ambientais do Brasil.
         </p>
@@ -23,520 +34,483 @@
         <span>EDIÇÃO ATUAL</span>
         <p id="current-date"></p>
       </div>
+
     </div>
 
+    <!-- MENU -->
+
     <nav class="navbar">
-      <button class="menu-toggle" id="menu-toggle">☰</button>
+
+      <button class="menu-toggle" id="menu-toggle">
+        ☰
+      </button>
 
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#evolucao">Evolução das Plantas</a></li>
-        <li><a href="#biomas">Biomas & Biodiversidade</a></li>
-        <li><a href="#alertas">Alertas Ambientais</a></li>
-        <li><a href="#estado">Filtro por Estado</a></li>
-        <li><a href="#downloads">Downloads</a></li>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#evolucao">Evolução das Plantas</a>
+        </li>
+
+        <li>
+          <a href="#biomas">Biomas & Biodiversidade</a>
+        </li>
+
+        <li>
+          <a href="#alertas">Alertas Ambientais</a>
+        </li>
+
+        <li>
+          <a href="#estado">Filtro por Estado</a>
+        </li>
+
       </ul>
+
     </nav>
+
   </header>
 
   <main>
 
     <!-- HOME -->
+
     <section id="home" class="section">
+
       <div class="section-title">
+
         <h2>Capa Principal</h2>
+
         <p>
-          A água doce é um dos recursos mais importantes para a manutenção da vida.
-          Conheça os biomas brasileiros que desempenham papel essencial no equilíbrio hídrico.
+          Conheça os biomas brasileiros que desempenham papel essencial
+          no equilíbrio hídrico.
         </p>
+
       </div>
 
+      <!-- GRÁFICO -->
+
       <div class="dashboard-water">
+
+        <!-- AMAZÔNIA -->
+
         <div class="water-card">
+
           <div class="water-info">
             <h3>Amazônia</h3>
             <span>Maior reserva hídrica</span>
           </div>
 
           <div class="bar-container">
-            <div class="bar amazonia">
-              <span class="tooltip">
-                A Amazônia regula o clima, abastece rios e influencia o regime de chuvas em todo o continente.
-              </span>
-            </div>
+            <div class="bar amazonia"></div>
           </div>
+
         </div>
 
+        <!-- MATA -->
+
         <div class="water-card">
+
           <div class="water-info">
             <h3>Mata Atlântica</h3>
             <span>Abastecimento urbano</span>
           </div>
 
           <div class="bar-container">
-            <div class="bar mata">
-              <span class="tooltip">
-                Responsável pelo abastecimento hídrico de milhões de brasileiros nas regiões costeiras.
-              </span>
-            </div>
+            <div class="bar mata"></div>
           </div>
+
         </div>
 
+        <!-- PAMPAS -->
+
         <div class="water-card">
+
           <div class="water-info">
             <h3>Pampas</h3>
             <span>Campos e rios</span>
           </div>
 
           <div class="bar-container">
-            <div class="bar pampas">
-              <span class="tooltip">
-                Os Pampas preservam nascentes importantes e mantêm o equilíbrio dos solos do sul do país.
-              </span>
-            </div>
+            <div class="bar pampas"></div>
           </div>
+
         </div>
 
+        <!-- CERRADO -->
+
         <div class="water-card">
+
           <div class="water-info">
             <h3>Cerrado</h3>
             <span>Berço das águas</span>
           </div>
 
           <div class="bar-container">
-            <div class="bar cerrado">
-              <span class="tooltip">
-                O Cerrado alimenta grandes bacias hidrográficas brasileiras e sofre intensa pressão agrícola.
-              </span>
-            </div>
+            <div class="bar cerrado"></div>
           </div>
+
         </div>
 
+        <!-- PANTANAL -->
+
         <div class="water-card">
+
           <div class="water-info">
             <h3>Pantanal</h3>
             <span>Maior área alagável</span>
           </div>
 
           <div class="bar-container">
-            <div class="bar pantanal">
-              <span class="tooltip">
-                O Pantanal funciona como regulador natural das águas e abriga biodiversidade extraordinária.
-              </span>
-            </div>
+            <div class="bar pantanal"></div>
           </div>
+
         </div>
+
       </div>
+
     </section>
 
     <!-- EVOLUÇÃO DAS PLANTAS -->
+
     <section id="evolucao" class="section dark-section">
+
       <div class="section-title">
-        <h2>Evolução das Plantas — Capítulo 4</h2>
-        <p>
-          A evolução vegetal marcou profundamente a história da vida terrestre.
-          Explore os grupos vegetais e seus avanços adaptativos.
-        </p>
+
+        <h2>
+          Evolução das Plantas — Capítulo 4
+        </h2>
+
       </div>
 
       <div class="tabs-container">
 
         <div class="tabs-buttons">
-          <button class="tab-btn active" data-tab="tab1">Algas & Briófitas</button>
-          <button class="tab-btn" data-tab="tab2">Pteridófitas</button>
-          <button class="tab-btn" data-tab="tab3">Gimnospermas</button>
-          <button class="tab-btn" data-tab="tab4">Angiospermas</button>
-          <button class="tab-btn" data-tab="tab5">Reprodução</button>
-          <button class="tab-btn" data-tab="tab6">Mata Atlântica</button>
+
+          <button class="tab-btn active" data-tab="tab1">
+            Algas & Briófitas
+          </button>
+
+          <button class="tab-btn" data-tab="tab2">
+            Pteridófitas
+          </button>
+
+          <button class="tab-btn" data-tab="tab3">
+            Gimnospermas
+          </button>
+
+          <button class="tab-btn" data-tab="tab4">
+            Angiospermas
+          </button>
+
         </div>
 
+        <!-- TAB 1 -->
+
         <div class="tab-content active" id="tab1">
+
           <h3>Carófitas e Briófitas</h3>
 
           <p>
-            As carófitas são algas verdes consideradas ancestrais das plantas terrestres.
-            As briófitas, como musgos e hepáticas, foram os primeiros vegetais a colonizar ambientes terrestres.
+            As carófitas são ancestrais das plantas terrestres.
           </p>
 
-          <div class="info-grid">
-            <div class="info-box">
-              <h4>Características</h4>
-              <ul>
-                <li>Ausência de vasos condutores</li>
-                <li>Pequeno porte</li>
-                <li>Dependência da água para reprodução</li>
-                <li>Predomínio do gametófito</li>
-              </ul>
-            </div>
-
-            <div class="info-box">
-              <h4>Importância</h4>
-              <p>
-                Auxiliam na retenção de umidade, formação do solo e equilíbrio ecológico.
-              </p>
-            </div>
-          </div>
         </div>
 
+        <!-- TAB 2 -->
+
         <div class="tab-content" id="tab2">
+
           <h3>Pteridófitas</h3>
 
-          <p>
-            As pteridófitas foram as primeiras plantas vasculares, permitindo maior transporte de água e nutrientes.
-          </p>
-
           <div class="cycle-steps">
+
             <div class="step">
               <span>1</span>
-              <p>Esporófito adulto produz esporos.</p>
+              <p>Esporófito produz esporos.</p>
             </div>
 
             <div class="step">
               <span>2</span>
-              <p>Esporos germinam originando gametófitos.</p>
+              <p>Esporos originam gametófitos.</p>
             </div>
 
             <div class="step">
               <span>3</span>
-              <p>Gametas masculinos dependem da água para fecundação.</p>
+              <p>Dependência da água.</p>
             </div>
 
             <div class="step">
               <span>4</span>
-              <p>Forma-se um novo esporófito vascular.</p>
+              <p>Forma-se novo esporófito.</p>
             </div>
+
           </div>
+
         </div>
 
+        <!-- TAB 3 -->
+
         <div class="tab-content" id="tab3">
+
           <h3>Gimnospermas</h3>
 
           <p>
-            As gimnospermas representam o surgimento das sementes, reduzindo a dependência da água para reprodução.
+            Primeiras plantas com sementes.
           </p>
 
-          <div class="highlight-card">
-            <h4>Principais Avanços Evolutivos</h4>
-
-            <ul>
-              <li>Presença de sementes</li>
-              <li>Pólen transportado pelo vento</li>
-              <li>Maior adaptação ao ambiente terrestre</li>
-              <li>Exemplo: pinheiros e araucárias</li>
-            </ul>
-          </div>
         </div>
 
+        <!-- TAB 4 -->
+
         <div class="tab-content" id="tab4">
+
           <h3>Angiospermas</h3>
 
           <p>
-            São os vegetais mais diversificados do planeta, caracterizados pela presença de flores e frutos.
+            Plantas com flores e frutos.
           </p>
 
-          <div class="classification-grid">
-            <div class="classification-card">
-              <h4>Monocotiledôneas</h4>
-              <ul>
-                <li>1 cotilédone</li>
-                <li>Folhas paralelas</li>
-                <li>Raiz fasciculada</li>
-                <li>Exemplo: milho</li>
-              </ul>
-            </div>
-
-            <div class="classification-card">
-              <h4>Dicotiledôneas</h4>
-              <ul>
-                <li>2 cotilédones</li>
-                <li>Folhas reticuladas</li>
-                <li>Raiz pivotante</li>
-                <li>Exemplo: feijão</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-content" id="tab5">
-          <h3>Tipos de Reprodução</h3>
-
-          <div class="toggle-buttons">
-            <button class="toggle-btn active-toggle" data-repro="assexuada">
-              Assexuada
-            </button>
-
-            <button class="toggle-btn" data-repro="sexuada">
-              Sexuada
-            </button>
-          </div>
-
-          <div class="reproduction-box" id="reproduction-content">
-            <h4>Reprodução Assexuada</h4>
-
-            <p>
-              Ocorre sem troca genética entre indivíduos. Pode acontecer por brotamento,
-              fragmentação ou propagação vegetativa.
-            </p>
-          </div>
-        </div>
-
-        <div class="tab-content" id="tab6">
-          <h3>Diversidade da Mata Atlântica</h3>
-
-          <p>
-            A Mata Atlântica possui enorme diversidade vegetal e alto índice de endemismo.
-          </p>
-
-          <div class="info-grid">
-            <div class="info-box">
-              <h4>Adaptações</h4>
-              <ul>
-                <li>Folhas largas para captar luz</li>
-                <li>Epifitismo</li>
-                <li>Alta umidade</li>
-                <li>Estratificação vegetal</li>
-              </ul>
-            </div>
-
-            <div class="info-box">
-              <h4>Reprodução</h4>
-              <p>
-                Polinização por aves, insetos e morcegos garante grande diversidade genética.
-              </p>
-            </div>
-          </div>
         </div>
 
       </div>
+
     </section>
 
     <!-- BIOMAS -->
+
     <section id="biomas" class="section">
+
       <div class="section-title">
-        <h2>Explorando os Biomas — Capítulo 5</h2>
-        <p>
-          Os biomas brasileiros apresentam enorme diversidade ecológica e estrutural.
-        </p>
+
+        <h2>
+          Enciclopédia da Biodiversidade
+        </h2>
+
       </div>
 
-      <div class="forest-section">
+      <!-- FLORA -->
 
-        <div class="forest-layers">
-          <button class="layer-btn" data-layer="herbaceo">
-            Herbáceo
+      <div class="flora-gallery">
+
+        <!-- CARD 1 -->
+
+        <div class="flora-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1200&auto=format&fit=crop"
+            alt="Ipê-amarelo"
+          />
+
+          <div class="flora-content">
+
+            <h4>Ipê-amarelo</h4>
+
+            <p>
+              <em>Handroanthus albus</em>
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="flora-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop"
+            alt="Vitória-régia"
+          />
+
+          <div class="flora-content">
+
+            <h4>Vitória-régia</h4>
+
+            <p>
+              <em>Victoria amazonica</em>
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="flora-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?q=80&w=1200&auto=format&fit=crop"
+            alt="Araucária"
+          />
+
+          <div class="flora-content">
+
+            <h4>Araucária</h4>
+
+            <p>
+              <em>Araucaria angustifolia</em>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FAUNA -->
+
+      <div class="fauna-section">
+
+        <div class="fauna-filters">
+
+          <button class="animal-filter active-animal" data-animal="all">
+            Todos
           </button>
 
-          <button class="layer-btn" data-layer="arbustivo">
-            Arbustivo
+          <button class="animal-filter" data-animal="mamifero">
+            Mamíferos
           </button>
 
-          <button class="layer-btn" data-layer="dossel">
-            Dossel
+          <button class="animal-filter" data-animal="ave">
+            Aves
           </button>
+
+          <button class="animal-filter" data-animal="reptil">
+            Répteis
+          </button>
+
+          <button class="animal-filter" data-animal="invertebrado">
+            Invertebrados
+          </button>
+
         </div>
 
-        <div class="layer-result" id="layer-result">
-          <h3>Selecione um estrato da floresta</h3>
-          <p>
-            Descubra as espécies e perfis vegetais presentes em cada camada.
-          </p>
+        <div class="animal-grid">
+
+          <div class="animal-card mamifero">
+            <h4>Onça-pintada</h4>
+          </div>
+
+          <div class="animal-card ave">
+            <h4>Arara-azul</h4>
+          </div>
+
+          <div class="animal-card reptil">
+            <h4>Jacaré-do-pantanal</h4>
+          </div>
+
+          <div class="animal-card invertebrado">
+            <h4>Abelha nativa</h4>
+          </div>
+
         </div>
 
       </div>
 
-      <div class="map-section">
-        <h3>Mapa Fitogeográfico Conceitual</h3>
-
-        <div class="concept-map">
-          <div class="region amazonia-map">Amazônia</div>
-          <div class="region cerrado-map">Cerrado</div>
-          <div class="region mata-map">Mata Atlântica</div>
-          <div class="region caatinga-map">Caatinga</div>
-          <div class="region pantanal-map">Pantanal</div>
-          <div class="region pampas-map">Pampas</div>
-        </div>
-      </div>
-
-      <!-- GALERIA -->
-      <div class="encyclopedia">
-        <h3>Enciclopédia da Biodiversidade</h3>
-
-        <div class="flora-gallery">
-          <div class="flora-card">
-            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=1200&auto=format&fit=crop" alt="Ipê Amarelo">
-
-            <div class="flora-content">
-              <h4>Ipê-amarelo</h4>
-              <p><em>Handroanthus albus</em></p>
-            </div>
-          </div>
-
-          <div class="flora-card">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Vitória Régia">
-
-            <div class="flora-content">
-              <h4>Vitória-régia</h4>
-              <p><em>Victoria amazonica</em></p>
-            </div>
-          </div>
-
-          <div class="flora-card">
-            <img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?q=80&w=1200&auto=format&fit=crop" alt="Araucária">
-
-            <div class="flora-content">
-              <h4>Araucária</h4>
-              <p><em>Araucaria angustifolia</em></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="fauna-section">
-          <div class="fauna-filters">
-            <button class="animal-filter active-animal" data-animal="all">Todos</button>
-            <button class="animal-filter" data-animal="mamifero">Mamíferos</button>
-            <button class="animal-filter" data-animal="ave">Aves</button>
-            <button class="animal-filter" data-animal="reptil">Répteis</button>
-            <button class="animal-filter" data-animal="invertebrado">Invertebrados</button>
-          </div>
-
-          <div class="animal-grid">
-
-            <div class="animal-card mamifero">
-              <h4>Onça-pintada</h4>
-              <p>Maior felino das Américas.</p>
-            </div>
-
-            <div class="animal-card ave">
-              <h4>Arara-azul</h4>
-              <p>Ave símbolo do Pantanal.</p>
-            </div>
-
-            <div class="animal-card reptil">
-              <h4>Jacaré-do-pantanal</h4>
-              <p>Importante predador dos rios.</p>
-            </div>
-
-            <div class="animal-card invertebrado">
-              <h4>Abelha nativa</h4>
-              <p>Fundamental para polinização.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- ALERTAS -->
+    <!-- ALERTA -->
+
     <section id="alertas" class="section alert-section">
+
       <div class="section-title">
+
         <h2>Alerta Ambiental</h2>
 
-        <p>
-          O avanço da degradação ambiental ameaça diretamente a biodiversidade,
-          a qualidade da água e a saúde humana.
-        </p>
       </div>
 
       <div class="alert-grid">
 
         <div class="alert-card">
-          <h3>Desmatamento e Queimadas</h3>
+
+          <h3>Desmatamento</h3>
 
           <div class="stat">52%</div>
 
           <p>
-            Estima-se que mais da metade do Cerrado tenha sido devastada até 2020.
+            Grande parte do Cerrado foi devastada.
           </p>
 
-          <div class="stat">7%</div>
-
-          <p>
-            Restam apenas fragmentos da Mata Atlântica original em estado preservado.
-          </p>
         </div>
 
         <div class="alert-card">
-          <h3>Impacto dos Agrotóxicos</h3>
+
+          <h3>Agrotóxicos</h3>
 
           <p>
-            Compostos químicos persistentes podem sofrer bioacumulação,
-            aumentando sua concentração nos níveis superiores da cadeia alimentar.
+            Compostos químicos geram bioacumulação.
           </p>
 
-          <div class="danger-box">
-            DDT e outros pesticidas estão associados a danos cardiovasculares,
-            respiratórios e alterações hormonais.
-          </div>
         </div>
 
         <div class="alert-card">
-          <h3>Garimpagem e Mercúrio</h3>
 
-          <ol>
-            <li>Mercúrio é utilizado na separação do ouro.</li>
-            <li>O metal contamina rios e sedimentos.</li>
-            <li>Peixes absorvem o mercúrio.</li>
-            <li>Humanos ingerem o contaminante pela alimentação.</li>
-            <li>Ocorrem danos neurológicos e intoxicação crônica.</li>
-          </ol>
+          <h3>Mercúrio</h3>
+
+          <p>
+            Contamina rios e cadeia alimentar.
+          </p>
+
         </div>
 
       </div>
+
     </section>
 
     <!-- FILTRO -->
+
     <section id="estado" class="section dark-section">
+
       <div class="section-title">
+
         <h2>Filtro por Estado</h2>
 
-        <p>
-          Descubra os biomas presentes em estados brasileiros.
-        </p>
       </div>
 
       <div class="state-box">
+
         <select id="state-select">
-          <option value="">Selecione um estado</option>
-          <option value="bahia">Bahia</option>
-          <option value="amazonas">Amazonas</option>
-          <option value="mato-grosso">Mato Grosso</option>
+
+          <option value="">
+            Selecione um estado
+          </option>
+
+          <option value="bahia">
+            Bahia
+          </option>
+
+          <option value="amazonas">
+            Amazonas
+          </option>
+
         </select>
 
         <div class="state-result" id="state-result">
-          <h3>Aguardando seleção...</h3>
+
+          <h3>
+            Aguardando seleção...
+          </h3>
+
         </div>
-      </div>
-    </section>
 
-    <!-- DOWNLOADS -->
-    <section id="downloads" class="section">
-      <div class="section-title">
-        <h2>Downloads Acadêmicos</h2>
-
-        <p>
-          Materiais de apoio para estudantes, professores e pesquisadores.
-        </p>
       </div>
 
-      <div class="download-grid">
-        <button class="download-btn">
-          Baixar Resumo em PDF — Capítulo 4
-        </button>
-
-        <button class="download-btn">
-          Baixar Resumo em PDF — Capítulo 5
-        </button>
-      </div>
     </section>
 
   </main>
 
   <footer class="footer">
+
     <p>
-      EcoJornal Brasil © 2026 — Educação ambiental, biodiversidade e preservação.
+      EcoJornal Brasil © 2026
     </p>
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
